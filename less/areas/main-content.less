@@ -1,7 +1,38 @@
 section#main-content {
-	h2 {
-		font-size: 19px;
-		font-weight: 300;
-		text-align: center;
+	form {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		
+		h2 {
+			font-size: 19px;
+			font-weight: 300;
+			text-align: center;
+		}
+		.checkbox {
+			margin: 0 auto;
+
+			label {
+				font-size: @font-size-large;
+				font-weight: 300;
+
+				&::before {
+					width: 18px;
+					height: 18px;
+					top: 4px;
+				}
+				&::after {
+					font-size: 13px;
+					top: 3px;
+				}
+			}
+		}
+		input[type=text] {
+			.form-control-focus(@beyonderme-color-orange);
+		}
+		.btn {
+			.button-variant(@beyonderme-color-white; @beyonderme-color-orange; darken(@beyonderme-color-orange, 5%));
+		}
 	}
 }

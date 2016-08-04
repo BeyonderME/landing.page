@@ -25,16 +25,31 @@
 					</div>
 				</div>
 			</header>
+			
 			<section id="main-content">
-				
 				<div div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							Formulário
+							<form>
+								<h2>Queremos saber sobre você! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere, lorem nec.</h2>
+								<div class="form-group">
+									<input class="form-control input-lg" type="text" placeholder="Seu email" />
+								</div>
+								<button type="submit" class="btn btn-default btn-lg pull-right">Submit</button>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox1">
+									<label for="checkbox1">I want to teach</label>
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" id="checkbox2">
+									<label for="checkbox2">I want to learn</label>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
 			</section>
+			
 			<footer>
 				<div class="container">
 					<div class="row">
