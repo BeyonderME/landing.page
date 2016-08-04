@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "jquery": "^3.1.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "FortAwesome/Font-Awesome#^4.6.3",
+    "awesome-bootstrap-checkbox": "flatlogic/awesome-bootstrap-checkbox#^0.3.7"
   }
 }
