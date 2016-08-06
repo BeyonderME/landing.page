@@ -1,9 +1,10 @@
 section#main-content {
+	padding-bottom: 20px;
+	
 	form {
 		max-width: 500px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 20px;
 		
 		h2 {
 			font-size: 19px;
@@ -25,6 +26,15 @@ section#main-content {
 				&::after {
 					font-size: 13px;
 					top: 3px;
+				}
+			}
+			
+			@media (min-width: 425px) {
+				float: left;
+				padding-top: 10px;
+				
+				&+.checkbox {
+					margin-left: 10px;
 				}
 			}
 		}
