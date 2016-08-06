@@ -17,17 +17,17 @@
 			<header>
 				<div id="how-it-works" class="container">
 					<div id="how-it-works-carousel" class="row">
-						<div class="how-it-works-step col-xs-12">
+						<div class="how-it-works-step col-xs-12 col-sm-4">
 							<img src="assets/images/favicon.png" alt="step 1" />
 							<h3>step 1</h3>
 							<p>Find unique places around the world to exchange your skills for accommodation.</p>
 						</div>
-						<div class="how-it-works-step col-xs-12">
+						<div class="how-it-works-step col-xs-12 col-sm-4">
 							<img src="assets/images/favicon.png" alt="step 1" />
 							<h3>step 1</h3>
 							<p>Find unique places around the world to exchange your skills for accommodation.</p>
 						</div>
-						<div class="how-it-works-step col-xs-12">
+						<div class="how-it-works-step col-xs-12 col-sm-4">
 							<img src="assets/images/favicon.png" alt="step 1" />
 							<h3>step 1</h3>
 							<p>Find unique places around the world to exchange your skills for accommodation.</p>
