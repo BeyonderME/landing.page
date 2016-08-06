@@ -9,16 +9,30 @@
 		<link rel="stylesheet" href="assets/css/style.min.css" />
 		
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
 		<script src="assets/js/main.js"></script> 
     </head>
     <body>
 		<div id="total">
 			<header>
 				<div id="how-it-works" class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							HOW IT WORKS!
+					<div id="how-it-works-carousel" class="row">
+						<div class="how-it-works-step col-xs-12">
+							<img src="assets/images/favicon.png" alt="step 1" />
+							<h3>step 1</h3>
+							<p>Find unique places around the world to exchange your skills for accommodation.</p>
 						</div>
+						<div class="how-it-works-step col-xs-12">
+							<img src="assets/images/favicon.png" alt="step 1" />
+							<h3>step 1</h3>
+							<p>Find unique places around the world to exchange your skills for accommodation.</p>
+						</div>
+						<div class="how-it-works-step col-xs-12">
+							<img src="assets/images/favicon.png" alt="step 1" />
+							<h3>step 1</h3>
+							<p>Find unique places around the world to exchange your skills for accommodation.</p>
+						</div>
+						
 					</div>
 				</div>
 				<div class="container">
