@@ -16,6 +16,13 @@
 		<div id="total">
 			<header>
 				<div id="how-it-works" class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<a id="hide-how-it-works" href="javascript: void(0)" role="button">
+								<i class="fa fa-times fa-2x"></i>
+							</a>
+						</div>
+					</div>
 					<div id="how-it-works-carousel" class="row">
 						<div class="how-it-works-step col-xs-12 col-sm-4">
 							<img src="assets/images/favicon.png" alt="step 1" />

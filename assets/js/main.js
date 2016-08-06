@@ -3,6 +3,9 @@ $(document).ready(function() {
 	$('#show-how-it-works').on('click', function(){
 		$('#how-it-works').slideDown();
 	});
+	$('#hide-how-it-works').on('click', function(){
+		$('#how-it-works').slideUp();
+	});
 	
 	var howItWorksCarousel = undefined;
 	var buildHowItWorksCarousel = function()
