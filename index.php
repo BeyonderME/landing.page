@@ -94,8 +94,11 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<p>
-								<a href="https://www.facebook.com/" target="_blank">
+								<a href="https://www.facebook.com/BeyonderME-608683155965574/" target="_blank">
 									<i class="fa fa-facebook-square fa-2x"></i>
+								</a>
+								<a href="javascript: void(0)" target="_blank">
+									<i class="fa fa-instagram fa-2x"></i>
 								</a>
 							</p>
 						</div>
