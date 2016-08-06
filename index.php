@@ -27,7 +27,7 @@
 			</header>
 			
 			<section id="main-content">
-				<div div class="container">
+				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
 							<form>
@@ -54,7 +54,23 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							FOOTER
+							<img src="assets/images/logo-footer.png" alt="Beyonder.ME logo" />
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<p>
+								<a href="https://www.facebook.com/" target="_blank">
+									<i class="fa fa-facebook-square fa-2x"></i>
+								</a>
+							</p>
+						</div>
+						<div class="col-xs-12">
+							<p><a href="mailto: contato@beyonder.me">contato@beyonder.me</a></p>
+							<p>&COPY; 2016 Beyonder.ME</p>
 						</div>
 					</div>
 				</div>
