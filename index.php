@@ -7,10 +7,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="stylesheet" href="assets/css/style.min.css" />
+		
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="assets/js/main.js"></script> 
     </head>
     <body>
 		<div id="total">
 			<header>
+				<div id="how-it-works" class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							HOW IT WORKS!
+						</div>
+					</div>
+				</div>
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
@@ -18,7 +28,7 @@
 						</div>
 						<div class="col-xs-12"><h1>Beyonder.ME frase de impacto</h1></div>
 						<div class="col-xs-12">
-							<a href="javascript: void(0)" class="btn btn-default btn-lg" role="button">
+							<a id="show-how-it-works" href="javascript: void(0)" class="btn btn-default btn-lg" role="button">
 								How It Works
 							</a>
 						</div>
