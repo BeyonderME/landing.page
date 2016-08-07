@@ -1,0 +1,13 @@
+{
+    "name": "ndrade/beyonderme-landing-page",
+    "description": "Description of project Landing Page Beyonder.ME.",
+    "authors": [
+        {
+            "name": "Julian Andrade",
+            "email": "julian@ndrade.com.br"
+        }
+    ],
+    "require": {
+		"slim/slim": "^3.0"
+	}
+}

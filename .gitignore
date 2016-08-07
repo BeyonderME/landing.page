@@ -1,3 +1,7 @@
 nbproject/
+
 bower_components/**
+vendor/**
+composer.lock
+
 assets/css/
