@@ -13,4 +13,4 @@ $container['db'] = function($container) {
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     return $pdo;
 };
-$container['view'] = new \Slim\Views\PhpRenderer("app/templates/");
+$container['view'] = new \Slim\Views\PhpRenderer("../app/templates/");

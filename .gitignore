@@ -1,6 +1,6 @@
 nbproject/
 
-bower_components/**
 vendor/**
 
-assets/css/
+public_html/assets/css/
+public_html/assets/bower_components/**

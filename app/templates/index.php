@@ -8,8 +8,8 @@
 		
 		<link rel="stylesheet" href="assets/css/style.min.css" />
 		
-		<script src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+		<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="assets/bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
 		<script src="assets/js/main.js"></script> 
     </head>
     <body>
