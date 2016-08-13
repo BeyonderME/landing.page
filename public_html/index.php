@@ -1,11 +1,21 @@
-<?php 
-
-require "../vendor/autoload.php";
-require "../app/slim/config.php";
+<?php require "../vendor/autoload.php" ?>
+<?php require "../app/slim/config.php" ?>
+<?php
 
 $app = new \Slim\App(["settings" => $config]);
 
-require "../app/slim/dependencies-injector.php";
-require "../app/slim/routes.php";
+/* Dependency Injector */
+$container = $app->getContainer();
+$container['logger'] = function($container) {
+	$logger = new \Monolog\Logger("my_logger");
+	$file_handler = new \Monolog\Handler\StreamHandler("../landing.page.logs/app.log");
+	$logger->pushHandler($file_handler);
+	return $logger;
+};
+$container['view'] = new \Slim\Views\PhpRenderer("../app/templates/");
+
+/* Routes */
+$app->get("/", "\HomeController:renderHome");
+$app->post("/", "\HomeController:recebeFormSubmit");
 
 $app->run();

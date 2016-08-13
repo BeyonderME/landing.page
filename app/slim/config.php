@@ -10,5 +10,5 @@ $config['db']['dbname'] = "beyonderme_landingpage";
 
 //Custom Autoload
 spl_autoload_register(function ($classname) {
-    require ("classes/" . $classname . ".php");
+	require ("../app/controllers/" . $classname . ".php");
 });
