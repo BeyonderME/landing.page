@@ -1,3 +1,4 @@
+//Interações do How It Works
 $(document).ready(function() {
 	$('#how-it-works').hide();
 	$('#show-how-it-works').on('click', function(){
@@ -44,7 +45,42 @@ $(document).ready(function() {
 			destroyHowItWorksCarousel();
 		}
 	});
+});
+
+//Interações do formulário
+$(document).ready(function() {
+	$('[data-toggle=popover]').popover();
 	
+	var validateForm = function() {
+		var emailVal = $('input[name=email]').val();
+		if(emailVal === '') {
+			showErrorPopover($('.email-popover'), 'Preencha com seu endereço de email');
+			return false;
+		}
+		
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		if(!emailReg.test(emailVal)) {
+			showErrorPopover($('.email-popover'), 'Preencha com um endereço de email válido');
+			return false;
+		}
+		
+		return true;
+	};
+	var showErrorPopover = function(el, msg) {
+		el.attr('data-content', msg);
+		el.popover('show');
+		
+		setTimeout(function(){
+			el.popover('hide');
+		}, 5000);
+	};
 	
-	
+	$('#landing-page-form').submit(function(e){
+		e.preventDefault();
+		
+		if(validateForm()) {
+			console.log( $( this ).serializeArray() );
+		}
+			
+	});
 });

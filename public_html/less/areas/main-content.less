@@ -45,4 +45,17 @@ section#main-content {
 			.button-variant(@beyonderme-color-white; @beyonderme-color-orange; darken(@beyonderme-color-orange, 5%));
 		}
 	}
+	
+	.popover {
+		font-size: 15px;
+		.alert-variant(@state-danger-bg, @state-danger-border, @state-danger-text);
+		
+		.arrow {
+			border-top-color: @state-danger-border;
+			
+			&::after {
+				border-top-color: @state-danger-bg;
+			}
+		}
+	}
 }

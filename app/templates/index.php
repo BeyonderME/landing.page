@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="assets/css/style.min.css" />
 		
 		<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="assets/bower_components/bootstrap/js/tooltip.js"></script>
+		<script src="assets/bower_components/bootstrap/js/popover.js"></script>
 		<script src="assets/bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
 		<script src="assets/js/main.js"></script> 
     </head>
@@ -61,18 +63,19 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<form method="POST">
+							<form method="POST" id="landing-page-form" novalidate>
 								<h2>Queremos saber sobre você! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere, lorem nec.</h2>
 								<div class="form-group">
-									<input name="email" class="form-control input-lg" type="text" placeholder="Seu email" />
+									<input name="email" class="form-control input-lg email-popover" type="email" placeholder="Seu email" 
+										   data-toggle="popover" data-placement="top" />
 								</div>
 								<button type="submit" class="btn btn-default btn-lg pull-right">Submit</button>
 								<div class="checkbox">
-									<input type="checkbox" id="checkbox1">
+									<input type="checkbox" id="checkbox1" name="intention" value="teach">
 									<label for="checkbox1">I want to teach</label>
 								</div>
 								<div class="checkbox">
-									<input type="checkbox" id="checkbox2">
+									<input type="checkbox" id="checkbox2" name="intention" value="learn">
 									<label for="checkbox2">I want to learn</label>
 								</div>
 							</form>
