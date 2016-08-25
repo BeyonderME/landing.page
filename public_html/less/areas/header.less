@@ -3,28 +3,31 @@ header {
 	color: #FFF;
 	padding-bottom: 18px;
 	text-align: center;
-	
-	.img-responsive {
-		max-width: 290px;
-		margin: 0 auto;
-	}
-	h1 {
-		font-size: 22px;
-		font-weight: 300;
-		margin-bottom: 20px;
-	}
-	.btn {
-		.header-btn-background(30%);
-		margin-top: 5px;
-		
-		&:active,
-		&:focus,
-		&:hover,
-		&:visited {
-			.header-btn-background(40%);
+
+	#header-main {
+		.img-responsive {
+			max-width: 290px;
+			margin: 0 auto;
 		}
-	}
+		h1 {
+			font-size: 22px;
+			font-weight: 300;
+			margin-bottom: 20px;
+		}
+		.btn {
+			.header-btn-background(30%);
+			margin-top: 5px;
+
+			&:active,
+			&:focus,
+			&:hover,
+			&:visited {
+				.header-btn-background(40%);
+			}
+		}
+	}		
 }
+
 .header-btn-background(@transparency) {
 	background-color: rgba(255,255,255,@transparency);
 	border-color: #FFF;

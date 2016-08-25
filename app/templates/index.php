@@ -26,30 +26,36 @@
 						</div>
 					</div>
 					<div id="how-it-works-carousel" class="row">
-						<div class="how-it-works-step col-xs-12 col-sm-4">
-							<img src="assets/images/favicon.png" alt="step 1" />
-							<h3>step 1</h3>
-							<p>Find unique places around the world to exchange your skills for accommodation.</p>
+						<div class="how-it-works-step col-xs-12 col-sm-3">
+							<img src="assets/images/how-it-works/01.png" alt="Wander" />
+							<h3>Wander</h3>
+							<p>Explore the possibilities of a different culture and develop new skills, with locals, wherever you are.</p>
 						</div>
-						<div class="how-it-works-step col-xs-12 col-sm-4">
-							<img src="assets/images/favicon.png" alt="step 1" />
-							<h3>step 1</h3>
-							<p>Find unique places around the world to exchange your skills for accommodation.</p>
+						<div class="how-it-works-step col-xs-12 col-sm-3">
+							<img src="assets/images/how-it-works/02.png" alt="Plan" />
+							<h3>Plan</h3>
+							<p>Get in touch with local residents through our platform and plan out what and where you're going to learn - the world is your classroom!</p>
 						</div>
-						<div class="how-it-works-step col-xs-12 col-sm-4">
-							<img src="assets/images/favicon.png" alt="step 1" />
-							<h3>step 1</h3>
-							<p>Find unique places around the world to exchange your skills for accommodation.</p>
+						<div class="how-it-works-step col-xs-12 col-sm-3">
+							<img src="assets/images/how-it-works/03.png" alt="Learn" />
+							<h3>Learn</h3>
+							<p>Go fot it! Meet at the scheduled date and spot and dive into a deep cultural learning experience growing your toolbox of personal abilities.</p>
+						</div>
+						<div class="how-it-works-step col-xs-12 col-sm-3">
+							<img src="assets/images/how-it-works/04.png" alt="Share" />
+							<h3>Share</h3>
+							<p>One skill down, many more to go! Review your experience, explore new possibilities for your next trip or become a local teacher yourself.</p>
 						</div>
 						
 					</div>
 				</div>
-				<div class="container">
+				
+				<div id="header-main" class="container">
 					<div class="row">
 						<div class="col-xs-12">
 							<img src="assets/images/logo.png" alt="Beyonder.me logo" class="img-responsive" />
 						</div>
-						<div class="col-xs-12"><h1>Beyonder.ME frase de impacto</h1></div>
+						<div class="col-xs-12"><h1>Learn from locals - The world is your classroom</h1></div>
 						<div class="col-xs-12">
 							<a id="show-how-it-works" href="javascript: void(0)" class="btn btn-default btn-lg" role="button">
 								How It Works
@@ -58,7 +64,7 @@
 					</div>
 				</div>
 			</header>
-			
+
 			<section id="main-content">
 				<div class="container">
 					<div class="row">
