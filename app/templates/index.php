@@ -71,18 +71,12 @@
 						<div class="col-xs-12">
 							<form method="POST" id="landing-page-form" novalidate>
 								<h2>Queremos saber sobre você! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere, lorem nec.</h2>
-								<div class="form-group">
-									<input name="email" class="form-control input-lg email-popover" type="email" placeholder="Seu email" 
+								<div class="input-group">
+									<input name="email" class="form-control input-lg email-popover" type="email" placeholder="Your email" 
 										   data-toggle="popover" data-placement="top" />
-								</div>
-								<button type="submit" class="btn btn-default btn-lg pull-right">Submit</button>
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox1" name="intention" value="teach">
-									<label for="checkbox1">I want to teach</label>
-								</div>
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox2" name="intention" value="learn">
-									<label for="checkbox2">I want to learn</label>
+									<span class="input-group-btn">
+										<button type="submit" class="btn btn-default btn-lg pull-right">Send</button>
+									</span>
 								</div>
 							</form>
 						</div>
