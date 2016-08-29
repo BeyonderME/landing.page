@@ -15,7 +15,7 @@ $container['logger'] = function($container) {
 $container['view'] = new \Slim\Views\PhpRenderer("../app/templates/");
 
 /* Routes */
-$app->get("/", "\HomeController:renderHome");
-$app->post("/", "\HomeController:recebeFormSubmit");
+$app->get("/", "app\controllers\HomeController:renderHome");
+$app->post("/", "app\controllers\HomeController:recebeFormSubmit")->setName('submitBackend');
 
 $app->run();

@@ -69,7 +69,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<form method="POST" id="landing-page-form" novalidate>
+							<form action="<?php echo $router->pathFor('submitBackend') ?>" method="POST" id="landing-page-form" novalidate>
 								<h2>Queremos saber sobre você! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere, lorem nec.</h2>
 								<div class="input-group">
 									<input name="email" class="form-control input-lg email-popover" type="email" placeholder="Your email" 

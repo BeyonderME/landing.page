@@ -1,9 +1,5 @@
 <?php
-/**
- * Description of HomeController
- *
- * @author julianchaos
- */
+namespace app\controllers;
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
@@ -38,7 +34,7 @@ class HomeController {
 	
 
 	/* Methods */
-	public function __construct(Slim\Container $container) {
+	public function __construct(\Slim\Container $container) {
 		$this->setContainer($container);
 	}
 	private function createDatabaseConnection() {
@@ -48,13 +44,14 @@ class HomeController {
 		$conn = mysqli_connect($db['host'], $db['user'], $db['pass'], $db['dbname']) or die ('Erro ao conectar-se: ' . mysqli_connect_error() );
 		mysqli_set_charset($conn, "utf8");
 
-		return $conn;		
+		return $conn;
 	}
 	
 	
 	/* Callback Methods */
 	public function renderHome(Request $request, Response $response) {
-		$response = $this->getContainer()->view->render($response, "index.php");
+		$router = $this->getContainer()->router;
+		$response = $this->getContainer()->view->render($response, "index.php", ["router"=>$router]);
 		return $response;
 	}
 	public function recebeFormSubmit(Request $request, Response $response) {
