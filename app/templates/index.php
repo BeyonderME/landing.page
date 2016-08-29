@@ -75,7 +75,9 @@
 									<input name="email" class="form-control input-lg email-popover" type="email" placeholder="Your email" 
 										   data-toggle="popover" data-placement="top" />
 									<span class="input-group-btn">
-										<button type="submit" class="btn btn-default btn-lg pull-right">Send</button>
+										<button type="submit" class="btn btn-default btn-lg pull-right">
+											<span class="submit-btn-text">Send</span>
+										</button>
 									</span>
 								</div>
 							</form>

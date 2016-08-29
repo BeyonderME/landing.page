@@ -43,7 +43,18 @@ section#main-content {
 		}
 		.btn {
 			.button-variant(@beyonderme-color-white; @beyonderme-color-orange; darken(@beyonderme-color-orange, 5%));
+			
+			&.readonly-state {
+				background-image: url('../images/form-loader.gif');
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				
+				span {
+					visibility: hidden;
+				}
+			}
 		}
+		
 	}
 	
 	.popover {

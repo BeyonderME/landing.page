@@ -53,7 +53,7 @@ $(document).ready(function() {
 	
 	var validateForm = function() {
 		var emailVal = $('input[name=email]').val();
-		if(emailVal === '') {
+		if(emailVal === '') {	
 			showErrorPopover($('.email-popover'), 'Preencha com seu endereço de email');
 			return false;
 		}
@@ -74,12 +74,30 @@ $(document).ready(function() {
 			el.popover('hide');
 		}, 5000);
 	};
+	var setReadonlyState = function() {
+		$('.email-popover').prop('readonly', 'readonly');
+		$('#landing-page-form button').prop('disabled', 'disabled').addClass('readonly-state');
+	};
+	var removeReadOnlyState = function() {
+		$('.email-popover').prop('readonly', false);
+		$('#landing-page-form button').prop('disabled', false).removeClass('readonly-state');
+	};
 	
 	$('#landing-page-form').submit(function(e){
 		e.preventDefault();
 		
 		if(validateForm()) {
-			console.log( $( this ).serializeArray() );
+			setReadonlyState();
+			$.post($(this).attr('action'),{email: $('input[name=email]').val()},
+					function(response) {
+						if(response.success) {
+							$('#landing-page-form').html('<h2>Obrigado!</h2><p>Entraremos em contato em breve!</p>');
+						}
+						else {
+							removeReadOnlyState();
+							showErrorPopover($('.email-popover'), response.message);
+						}
+					});
 		}
 			
 	});
