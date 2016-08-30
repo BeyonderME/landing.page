@@ -8,7 +8,7 @@ $app = new \Slim\App(["settings" => $config]);
 $container = $app->getContainer();
 $container['logger'] = function($container) {
 	$logger = new \Monolog\Logger("my_logger");
-	$file_handler = new \Monolog\Handler\StreamHandler("../landing.page.logs/app.log");
+	$file_handler = new \Monolog\Handler\StreamHandler("../logs/app.log");
 	$logger->pushHandler($file_handler);
 	return $logger;
 };
