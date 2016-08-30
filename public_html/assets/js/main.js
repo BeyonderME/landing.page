@@ -3,9 +3,15 @@ $(document).ready(function() {
 	$('#how-it-works').hide();
 	$('#show-how-it-works').on('click', function(){
 		$('#how-it-works').slideDown();
+		ga('send', {
+			hitType: 'event', eventCategory: 'How it works', eventAction: 'Open'
+		});
 	});
 	$('#hide-how-it-works').on('click', function(){
 		$('#how-it-works').slideUp();
+		ga('send', {
+			hitType: 'event', eventCategory: 'How it works', eventAction: 'Close'
+		});
 	});
 	
 	var howItWorksCarousel = undefined;
@@ -85,17 +91,23 @@ $(document).ready(function() {
 	
 	$('#landing-page-form').submit(function(e){
 		e.preventDefault();
-		
+
 		if(validateForm()) {
 			setReadonlyState();
 			$.post($(this).attr('action'),{email: $('input[name=email]').val()},
 					function(response) {
 						if(response.success) {
 							$('#landing-page-form').html('<h2>Obrigado!<br>Entraremos em contato em breve!</h2>');
+							ga('send', {
+								hitType: 'event', eventCategory: 'Formulário', eventAction: 'Submit', eventLabel: 'Sucesso'
+							});
 						}
 						else {
 							removeReadOnlyState();
 							showErrorPopover($('.email-popover'), response.message);
+							ga('send', {
+								hitType: 'event', eventCategory: 'Formulário', eventAction: 'Submit', eventLabel: 'Falha'
+							});
 						}
 					});
 		}
