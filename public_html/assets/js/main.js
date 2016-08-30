@@ -91,7 +91,7 @@ $(document).ready(function() {
 			$.post($(this).attr('action'),{email: $('input[name=email]').val()},
 					function(response) {
 						if(response.success) {
-							$('#landing-page-form').html('<h2>Obrigado!</h2><p>Entraremos em contato em breve!</p>');
+							$('#landing-page-form').html('<h2>Obrigado!<br>Entraremos em contato em breve!</h2>');
 						}
 						else {
 							removeReadOnlyState();
