@@ -8,7 +8,6 @@ class HomeController {
 	
 	/* ATTRIBUTES */
 	private $_container;
-	private $_conn;
 
 	
 	/* GETTERS & SETTERS */
@@ -18,20 +17,7 @@ class HomeController {
 	private function setContainer($container) {
 		$this->_container = $container;
 	}
-	
-	private function getConn()	{
-		if(is_null($this->_conn))
-		{
-			$conn = $this->createDatabaseConnection();
-			$this->setConn($conn);
-		}
-		
-		return $this->_conn;
-	}
-	private function setConn($conn)	{
-		$this->_conn = $conn;
-	}
-	
+
 
 	/* Methods */
 	public function __construct(\Slim\Container $container) {
@@ -46,7 +32,7 @@ class HomeController {
 
 		return $conn;
 	}
-	
+
 	
 	/* Callback Methods */
 	public function renderHome(Request $request, Response $response) {
@@ -56,12 +42,15 @@ class HomeController {
 	}
 	public function recebeFormSubmit(Request $request, Response $response) {
 		$data = $request->getParsedBody();
-		$email = $data['email'];
+		
+		$submissao = new \app\models\Submissao($this->getContainer());
+		$submissao->setEmail($data['email']);
+		
+		$saveResponse = $submissao->save();
 
-		$this->getContainer()->logger->addInfo("Requisição recebida de $email");
-		$response->getBody()->write("Requisição recebida de $email");
-
+		$response = $response->withJson($saveResponse);
 		return $response;
+
 	}
 
 }
