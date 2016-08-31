@@ -97,7 +97,7 @@ $(document).ready(function() {
 			$.post($(this).attr('action'),{email: $('input[name=email]').val()},
 					function(response) {
 						if(response.success) {
-							$('#landing-page-form').html('<h2>Obrigado!<br>Entraremos em contato em breve!</h2>');
+							$('#landing-page-form').html('<h2>Thank you!<br>We\'ll keep you in touch!</h2>');
 							ga('send', {
 								hitType: 'event', eventCategory: 'Formulário', eventAction: 'Submit', eventLabel: 'Sucesso'
 							});
