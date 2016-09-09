@@ -65,8 +65,8 @@
 						<div class="col-xs-12">
 							<img src="assets/images/logo.png" alt="Beyonder.me logo" class="img-responsive" />
 						</div>
-						<div class="col-xs-12"><h1>Learn from locals - The world is your classroom</h1></div>
-						<div class="col-xs-12">
+						<div class="col-xs-12"><h1><small>Learn from locals - The world is your classroom</small></h1></div>
+						<div class="col-xs-12 text-center">
 							<a id="show-how-it-works" href="javascript: void(0)" class="btn btn-default btn-lg" role="button">
 								How It Works
 							</a>
@@ -80,7 +80,7 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<form action="<?php echo $router->pathFor('submitBackend') ?>" method="POST" id="landing-page-form" novalidate>
-								<h2>Want to be the first to know more about?<br/>* Don't worry we hate spams too</h2>
+								<h2><small>Want to be the first to know more about?</small></h2>
 								<div class="input-group">
 									<input name="email" class="form-control input-lg email-popover" type="email" placeholder="Your email" 
 										   data-toggle="popover" data-placement="top" />
@@ -90,7 +90,45 @@
 										</button>
 									</span>
 								</div>
+								<h3><small>* Don't worry. We hate spams too.</small></h3>
 							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="our-team">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>We are</h2>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1-5">
+							<h3 class="visible-xs">Tai Barroso <a href="https://www.facebook.com/tehfzinha" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a></h3>
+							<img src="assets/images/our-team/tai.jpg" alt="Tai Barroso" class="img-responsive img-circle" />
+							<h3 class="hidden-xs">Tai Barroso <a href="https://www.facebook.com/tehfzinha" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a></h3>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-3">
+							<h3 class="visible-xs">Julia Abreu <a href="https://www.facebook.com/julia.abreu" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a></h3>
+							<img src="assets/images/our-team/dora-aventureira.jpg" alt="Julia Abreu" class="img-responsive img-circle" />
+							<h3 class="hidden-xs">Julia Abreu <a href="https://www.facebook.com/julia.abreu" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a></h3>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-lg-3">
+							<h3 class="visible-xs">Julian Andrade <a href="https://www.facebook.com/julianchaos" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a></h3>
+							<img src="assets/images/our-team/julian.jpg" alt="Julian Andrade" class="img-responsive img-circle" />
+							<h3 class="hidden-xs">Julian Andrade <a href="https://www.facebook.com/julianchaos" target="_blank">
+									<i class="fa fa-facebook-square"></i>
+								</a></h3>
 						</div>
 					</div>
 				</div>
