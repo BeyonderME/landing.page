@@ -156,7 +156,7 @@
 							</p>
 						</div>
 						<div class="col-xs-12">
-							<p><a href="mailto: contato@beyonder.me">contato@beyonder.me</a></p>
+							<p><a href="mailto: beyonder.me@gmail.com">beyonder.me@gmail.com</a></p>
 							<p>&COPY; 2016 Beyonder.ME</p>
 						</div>
 					</div>
