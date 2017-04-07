@@ -134,6 +134,85 @@
 				</div>
 			</section>
 			
+			<section id="partners">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Partners</h2>
+						</div>
+					</div>
+					
+					<!-- _Social Starters -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<h3>Social Starters</h3>
+						</div>
+						
+						<div class="hidden-xs col-sm-offset-1 col-sm-2">
+							<a href="http://www.socialstarters.org/" target="_blank">
+								<img src="assets/images/partners/social-starters.jpg" alt="Social Starters" class="img-responsive" />
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<a href="http://www.socialstarters.org/" target="_blank" class="visible-xs">
+								<img src="assets/images/partners/social-starters.jpg" alt="Social Starters" class="small-thumbnail" />
+							</a>
+							<p><a href="http://www.socialstarters.org/" target="_blank">_SocialStarters</a> run immersive experiences for volunteer business consultants who want to share their skills, travel with purpose and have a meaningful adventure. They match business professionals with grassroots entrepreneurs who are working hard to be financially sustainable whilst tackling issues in their communities in India, Sri Lanka & Brazil.</p>
+							
+							<ul class=" links fa-ul">
+								<li>
+									<i class="fa fa-li fa-link"></i>
+									<a href="http://www.socialstarters.org/" target="_blank">
+										 Site
+									</a>
+									
+								</li>
+								<li>
+									<i class="fa fa-li fa-facebook-square"></i>
+									<a href="https://www.facebook.com/WeAreSocialStarters/" target="_blank">
+										 Facebook
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- Rio Criativo -->
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<h3>Rio Criativo</h3>
+						</div>
+						<div class="hidden-xs col-sm-offset-1 col-sm-2">
+							<a href="http://riocriativo.com/" target="_blank">
+								<img src="assets/images/partners/rio-criativo.png" alt="Rio Criativo" class="img-responsive" />
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<a href="http://riocriativo.com/" target="_blank" class="visible-xs">
+								<img src="assets/images/partners/rio-criativo.png" alt="Rio Criativo" class="small-thumbnail" />
+							</a>
+							<p><a href="http://riocriativo.com/" target="_blank">Rio Criativo</a> has been formed within a department in the government of Rio. Their work involves developing and boosting cultural, creative and entrepreneurial projects & opportunities across Rio.</p>
+						
+							<ul class=" links fa-ul">
+								<li>
+									<i class="fa fa-li fa-link"></i>
+									<a href="http://riocriativo.com/" target="_blank">
+										 Site
+									</a>
+									
+								</li>
+								<li>
+									<i class="fa fa-li fa-facebook-square"></i>
+									<a href="https://www.facebook.com/riocriativo" target="_blank">
+										 Facebook
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
 			<footer>
 				<div class="container">
 					<div class="row">
